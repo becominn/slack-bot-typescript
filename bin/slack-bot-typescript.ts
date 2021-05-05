@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
-import { SlackBotTypescriptStack } from '../lib/slack-bot-typescript-stack';
+import { SlackBotCdkStack } from '../lib/slack-bot-typescript-stack';
 
 const app = new cdk.App();
-new SlackBotTypescriptStack(app, 'SlackBotTypescriptStack', {
+new SlackBotCdkStack(app, 'SlackBoltCdkSampleStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,
    * but a single synthesized template can be deployed anywhere. */
